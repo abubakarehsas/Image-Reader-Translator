@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">Image Reader &amp; Translator</string>
+
+    <!--AD-MOB-->
+    <string name="admobInterstetialunitID">ca-app-pub-1629039137396721/8497573751</string> <!--ACTUAL INTERSTETIAL ADMOB UNIT-->
+    <!--<string name="admobInterstetialunitID">ca-app-pub-3940256099942544/1033173712</string> &lt;!&ndash;DUMMY INTERSTETIAL ADMOB UNIT&ndash;&gt;-->
+    <string name="admobunitID">ca-app-pub-1629039137396721/3161007664</string>  <!--ACTUAL ADMOB UNIT-->
+    <!--<string name="admobunitID">ca-app-pub-3940256099942544/6300978111</string>   DUMMY ADMOB UNIT-->
+    <string name="admobappID">ca-app-pub-1629039137396721~6808129705</string>
+
+
+
+    <string-array name="languages_array">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belarusian</item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Catalan &amp; Valencian</item>
+        <item>Central Khmer</item>
+        <item>Czech</item>
+        <item>Chinese - Simplified</item>
+        <item>Chinese - Traditional</item>
+        <item>Danish</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Estonian</item>
+        <item>Persian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian &amp; Haitian Creole</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Icelandic</item>
+        <item>Italian</item>
+        <item>Javanese</item>
+        <item>Japanese</item>
+        <item>Kannada</item>
+        <item>Kazakh</item>
+        <item>Kirghiz &amp; Kyrgyz</item>
+        <item>Korean</item>
+        <item>Kurdish</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Macedonian</item>
+        <item>Maltese</item>
+        <item>Malay</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Punjabi</item>
+        <item>Polish</item>
+        <item>Portuguese(Portugal, Brazil)</item>
+        <item>Pushto or Pashto</item>
+        <item>Romanian &amp; Moldavian</item>
+        <item>Russian</item>
+        <item>Sinhalese or Sinhala</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish &amp; Castilian</item>
+        <item>Serbian</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Tajik</item>
+        <item>Tagalog</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Welsh</item>
+        <item>Yiddish</item>
+    </string-array>
+
+    <string-array name="languages_keys_for_translation">
+        <item>af</item>
+        <item>sq</item>
+        <item>am</item>
+        <item>ar</item>
+        <item>az</item>
+        <item>eu</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>km</item>
+        <item>cs</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+        <item>da</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>ka</item>
+        <item>de</item>
+        <item>el</item>
+        <item>gu</item>
+        <item>ht</item>
+        <item>iw</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>is</item>
+        <item>it</item>
+        <item>jw</item>
+        <item>ja</item>
+        <item>kn</item>
+        <item>kk</item>
+        <item>ky</item>
+        <item>ko</item>
+        <item>ku</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>ml</item>
+        <item>mr</item>
+        <item>mk</item>
+        <item>mt</item>
+        <item>ms</item>
+        <item>ne</item>
+        <item>no</item>
+        <item>pa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ps</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>es</item>
+        <item>sr</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>tg</item>
+        <item>tl</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>vi</item>
+        <item>yi</item>
+    </string-array>
+
+    <integer-array name="language_files_sizes">
+        <item>5057</item>
+        <item>6410</item>
+        <item>2865</item>
+        <item>6150</item>
+        <item>6440</item>
+        <item>4830</item>
+        <item>6640</item>
+        <item>15170</item>
+        <item>5290</item>
+        <item>5865</item>
+        <item>5210</item>
+        <item>47690</item>
+        <item>11600</item>
+        <item>41085</item>
+        <item>55345</item>
+        <item>7150</item>
+        <item>21345</item>
+        <item>6430</item>
+        <item>9400</item>
+        <item>4675</item>
+        <item>12940</item>
+        <item>13700</item>
+        <item>5370</item>
+        <item>6055</item>
+        <item>13035</item>
+        <item>5275</item>
+        <item>10355</item>
+        <item>1300</item>
+        <item>4220</item>
+        <item>13800</item>
+        <item>11900</item>
+        <item>6330</item>
+        <item>5935</item>
+        <item>13860</item>
+        <item>4280</item>
+        <item>32280</item>
+        <item>34800</item>
+        <item>4400</item>
+        <item>5355</item>
+        <item>12980</item>
+        <item>1955</item>
+        <item>20600</item>
+        <item>5865</item>
+        <item>7600</item>
+        <item>8690</item>
+        <item>8560</item>
+        <item>13885</item>
+        <item>3730</item>
+        <item>4980</item>
+        <item>6325</item>
+        <item>15470</item>
+        <item>8050</item>
+        <item>9950</item>
+        <item>13570</item>
+        <item>12592</item>
+        <item>2415</item>
+        <item>7750</item>
+        <item>15755</item>
+        <item>6615</item>
+        <item>8895</item>
+        <item>6645</item>
+        <item>15560</item>
+        <item>4485</item>
+        <item>3750</item>
+        <item>9220</item>
+        <item>4980</item>
+        <item>38380</item>
+        <item>1070</item>
+        <item>4000</item>
+        <item>13230</item>
+        <item>7835</item>
+        <item>4695</item>
+        <item>4170</item>
+        <item>5935</item>
+        <item>3680</item>
+        <item>4120</item>
+    </integer-array>
+
+</resources>

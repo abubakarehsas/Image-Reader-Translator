@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asisdroid.oneindialanguage.MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/fragment_ads4"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/fromLangLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <Spinner
+        android:id="@+id/spn_fromLang"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginRight="@dimen/app_margin"/>
+
+    <EditText
+        android:id="@+id/edt_fromLang"
+        android:layout_below="@+id/spn_fromLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:singleLine="false"
+        android:hint="Text to convert"
+        android:fontFamily="sans-serif"
+        android:drawableRight="@mipmap/clipboard_copy"
+        android:drawablePadding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_fromOr"
+        android:layout_below="@+id/edt_fromLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+
+        />
+
+    <Button
+        android:id="@+id/btn_fromLangImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_fromOr"
+        android:drawableTop="@mipmap/photoselect"
+        android:text="Choose the image to convert"
+        android:textStyle="bold|italic"
+        android:layout_margin="@dimen/app_margin"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="3dp"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/midLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/fromLangLayout"
+        android:background="@color/colorAccent"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/toLangLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/midLine"
+        >
+        <Spinner
+            android:id="@+id/spn_toLang"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="@dimen/app_margin"/>
+
+        <EditText
+            android:id="@+id/edt_toLang"
+            android:layout_below="@+id/spn_toLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:singleLine="false"
+            android:hint="Converted text"
+            android:fontFamily="sans-serif"
+            android:drawableRight="@mipmap/clipboard_copy"
+            android:drawablePadding="3dp"
+            android:editable="false"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_convert"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/toLangLayout"
+        android:text="Convert"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+        </RelativeLayout>
+    </ScrollView>
+    <!--ADS LAYOUT-->
+    <fragment
+        android:name="com.asisdroid.oneindialanguage.FragmentAd"
+        android:id="@+id/fragment_ads4"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

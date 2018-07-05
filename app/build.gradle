@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.asisdroid.oneindialanguage"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 6
+        versionName "2.3"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations {
+        all {
+            exclude module: 'httpclient'
+            exclude module: 'json'
+            exclude module: 'commons-logging'
+        }
+    }
+
+    packagingOptions {
+        exclude 'project.properties'
+        exclude 'META-INF/INDEX.LIST'
+        /*       exclude 'META-INF/DEPENDENCIES'
+               exclude 'META-INF/NOTICE'
+               exclude 'META-INF/LICENSE'
+               exclude 'META-INF/LICENSE.txt'
+               exclude 'META-INF/NOTICE.txt'*/
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.rmtheis:tess-two:6.0.4'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.google.cloud:google-cloud-translate:1.14.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.google.android.gms:play-services-ads:11.8.0'
+    compile 'com.google.dagger:dagger:2.13'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.13'
+}

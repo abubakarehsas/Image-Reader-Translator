@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/colorTitle"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/language"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/extension"
+        android:padding="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enhance"
+            android:textSize="13sp"
+            android:textColor="@color/colorTitle"
+            />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/umbralization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extension"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:text="Please, select the correct language for getting best results."
+        />
+    <ImageView
+        android:id="@+id/croppedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/warningText" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/nextStep"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_done_white_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+
+    <!--ADS LAYOUT-->
+    <fragment
+        android:name="com.asisdroid.oneindialanguage.FragmentAd"
+        android:id="@+id/fragment_ads4"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
